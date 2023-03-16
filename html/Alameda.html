@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            margin-bottom: 150px;
+
+        }
+
+        .left,
+        .middle,
+        .right {
+            /* border: 1px solid #000; */
+            flex: 1 1 0;
+        }
+
+        .left ul {
+            height: 100%;
+            align-items: center;
+            display: flex;
+            list-style: none;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        .left ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .middle {
+            text-align: center;
+
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .right i {
+            font-size: 2rem;
+            color: #e13a3a;
+
+        }
+
+        nav {
+            margin-bottom: 70px;
+        }
+
+        .navlinks {
+            display: flex;
+            justify-content: center;
+
+            border-bottom: 1px solid red;
+            padding: 10px;
+        }
+
+        .navlinks a {
+            color: black;
+            border-right: 1px solid rgb(217, 183, 183);
+            padding-right: 10px;
+            padding-left: 10px;
+
+        }
+
+        .navlinks a:nth-child(3) {
+            border-right: none
+        }
+
+        /* Main */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        .col {
+            width: 25%;
+            margin-bottom: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .card img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 3/4;
+
+        }
+
+        .card p {
+            font-size: 0.5rem;
+        }
+
+        footer>div {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        @media screen and (min-width:768px) {
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .col {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="left">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Lookbook</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="middle">
+            <h1>Alameda</h1>
+        </div>
+        <div class="right">
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="navlinks">
+                <a href="#">Tops</a>
+                <a href="#">bottoms</a>
+                <a href="#">Sale</a>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <div class="products">
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="" alt="">
+                            <h5>Lounge Tunic / Black</h5>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div></div>
+        <div></div>
+        <div>
+            <!-- 導向 -->
+            <form action="">
+                <input type="text" name="usermail" placeholder="User Email...">
+                <button type="submit">Sign up</button>
+
+            </form>
+            <div>Made with <a href="#">Squarespace</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

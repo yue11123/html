@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normann</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(51, 51, 51);
+        }
+
+        /* header>div {
+            margin-bottom: 10px;
+        } */
+
+        .middle a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .right button {
+            padding: 10px 20px;
+        }
+
+        .nav-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        @media screen and (min-width:768px) {
+            .nav-area {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            header .container {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .middle a {
+                margin-right: 10px;
+            }
+        }
+
+        /* heroSection */
+
+        #heroSection {
+            /* margin-bottom: 100px; */
+            background-color: rgb(51, 51, 51);
+            color: #fff;
+            text-align: center;
+        }
+
+        #heroSection img {
+            width: 100%;
+        }
+
+        @media screen and (min-width:768px) {
+            #heroSection {
+                display: flex;
+            }
+
+            #heroSection .box {
+                width: 50%;
+            }
+
+            #heroSection .box:nth-child(1) {
+                order: 2;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+            }
+
+            #heroSection .box:nth-child(2) {
+                order: 1;
+
+
+
+            }
+        }
+
+        #Elementor {
+            background-color: burlywood;
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #Elementor h2,
+        #Elementor p {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+
+        .demo-img img {
+            width: 100%;
+        }
+
+        .items {
+            display: none;
+        }
+
+        @media screen and (min-width:768px) {
+            #Elementor .container {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #Elementor {
+                position: relative;
+            }
+
+            .items {
+                display: block;
+            }
+
+            .item img {
+                width: 100%;
+            }
+
+            .item:nth-child(1) {
+                position: absolute;
+                top: 30%;
+                left: 6%;
+            }
+
+            .item:nth-child(2) {
+                position: absolute;
+                top: 45%;
+                right: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-area">
+                <div class="left">
+                    <img src="./normann-imgs-main/logo-white.svg" alt="">
+                </div>
+                <div class="middle">
+                    <a href="#">Demos</a>
+                    <a href="#">Features</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="right">
+                    <button>Purchase now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="heroSection">
+            <div class="box">
+                <h1>Normann - Furniture</h1>
+            </div>
+            <div class="box">
+                <img src="./normann-imgs-main/section1/ldp_img-1.png" alt="">
+            </div>
+        </section>
+
+        <section id="Elementor">
+            <div class="container">
+                <h2>Elementor - Visual PageBuilder</h2>
+                <p>Using Petpuzzy – Pet Store WordPress Theme, you can customize and build any layout as you can imagine
+                    with the powerful drag & drop page builder – Elementor.
+                </p>
+                <div class="demo-img">
+                    <img src="./normann-imgs-main/section3/ldp_img-1-1.png" alt="">
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <img src="./normann-imgs-main/section3/elementor_items/ldp_elemontor1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./normann-imgs-main/section3/elementor_items/ldp_elemontor2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

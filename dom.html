@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        .myH1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="myH1">1 My H1</h1>
+    <h2 class="myH1">2 my H2</h2>
+
+
+
+    <script>
+        // const myH1 = document.querySelector('.myH1')
+        const myH1 = document.getElementsByClassName('myH1')
+        myH1[0].innerHTML = 'new H1 content';
+        myH1[0].style.color = 'blue'
+        myH1[0].style.background = 'yellow'
+        console.log(myH1);
+
+    </script>
+</body>
+
+</html>

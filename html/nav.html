@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* nav area */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            /* bottom: 0; */
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: aquamarine;
+
+        }
+
+        ul>li {
+            display: inline-block;
+            line-height: 50px;
+            margin: 10px;
+        }
+
+        ul a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        section {
+            height: 100vh;
+            font-size: 3rem;
+        }
+
+        main {
+            padding-top: 70px;
+            /* margin-top: 70px; */
+        }
+
+        #backToTop {
+            background-color: bisque;
+            width: fit-content;
+            /* padding-top right bottem left */
+            padding: 2px 10px;
+            border-radius: 10px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./nav.html">Nav</a></li>
+            <li><a href="./nesting.html">nesting</a></li>
+            <li><a href="./01.HelloWorld.html">HelloWorld</a></li>
+            <li><a href="./02.img.html">img</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- <h2>Nav page</h2> -->
+        <!-- section{section$}*6 -->
+        <section>section1</section>
+        <section>section2</section>
+        <section>section3</section>
+        <section>section4</section>
+        <section>section5</section>
+        <section>section6</section>
+
+
+
+    </main>
+    <!-- nav>ul>li*4 縮寫-->
+    <!-- <nav>
+        <ul id="globlenav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav> -->
+    <div id="backToTop">
+        back
+
+    </div>
+
+
+</body>
+
+</html>

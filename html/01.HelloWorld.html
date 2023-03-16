@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        ul {
+            list-style-type: none;
+            background-color: aquamarine;
+        }
+
+        ul>li {
+            display: inline-block;
+            line-height: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .hide {
+            opacity: 0;
+            transition: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./01.HelloWorld.html">Hello World</a></li>
+            <li><a href="./11.nav.html">Nav</a></li>
+            <li><a href="./3.block.html">Link3</a></li>
+            <li><a href="./4.inline-block.html">Link4</a></li>
+        </ul>
+    </nav>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minus voluptatibus ipsam accusantium,
+        facere illum corrupti nihil quaerat culpa est rerum consequuntur quo. Quidem minus odio cupiditate
+        blanditiis maiores eius.</p>
+    <button>Click</button>
+    <div class="hide">
+        <h1>Hello 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minus voluptatibus ipsam accusantium,
+            facere illum corrupti nihil quaerat culpa est rerum consequuntur quo. Quidem minus odio cupiditate
+            blanditiis maiores eius.</p>
+
+    </div>
+
+
+    <script>
+        const btn = document.querySelector('button')
+        const hideDiv = document.querySelector('.hide')
+
+        btn.addEventListener('click', function () {
+
+            hideDiv.style.opacity = 1
+        })
+    </script>
+</body>
+
+</html>

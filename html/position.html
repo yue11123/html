@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap2 {
+
+            width: 800px;
+            height: 800px;
+            background-color: rgb(63, 34, 91);
+            position: relative;
+        }
+
+        .wrap {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+        }
+
+        .box {
+            width: 150px;
+            height: 120px;
+            background-color: brown;
+
+            /* position: relative; */
+            /* left: 200px; */
+            position: absolute;
+            /* right: 0; */
+            bottom: 0;
+            /* top: 0; */
+
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(194, 46, 110);
+
+            /* position: absolute; */
+            /* right: 0; */
+            /* top: 0; */
+            /* position: relative; */
+            /* z-index: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap2">
+        <div class="wrap">
+            <div class="box">box</div>
+            <div class="box2">box2</div>
+        </div>
+    </div>
+</body>
+
+</html>

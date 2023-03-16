@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>event</title>
+
+    <style>
+        .wrap {
+            width: 400px;
+            height: 400px;
+            background-color: cadetblue;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+    </div>
+    <script>
+        const wrap = document.querySelector('.wrap')
+        const box = document.querySelector('.box')
+
+        wrap.addEventListener('click', function (event) {
+            console.log('wrap clicked');
+        })
+
+        box.addEventListener('click', function (event) {
+            console.log('box clicked');
+        })
+
+    </script>
+</body>
+
+</html>

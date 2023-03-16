@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+
+        const myObj = { 'key1': 'value1', 'key2': 'value2', 'key3': 'value3' };
+        console.log('1:', myObj['key1']);
+
+        console.log('2:', myObj.key2);
+        const keyFromServer = 'key1';
+        console.log('variable', myObj[keyFromServer]);
+        myObj.key4 = 'value4';
+        console.log('myObj:', myObj);
+        myObj.key1 = 'New value1';
+        console.log('myObj:', myObj);
+        delete myObj.key1;
+        console.log('myObj:', myObj);
+        console.log('myObj:', Object.keys(myObj));
+        console.log('myObj:', Object.values(myObj));
+        console.log('myObj:', Object.entries(myObj));
+        console.log('myObj:', Object.entries(myObj).length); 
+    </script>
+</body>
+
+</html>

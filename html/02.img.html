@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ctlr + / -->
+    <!-- link rel="stylesheet" href="./css/02.img.css" -->
+    <style>
+        .banner_imgs {
+            width: 700px;
+            height: 600px;
+            display: block;
+        }
+
+
+        .artimgs {
+            width: 400px;
+            height: 200px;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="banner_imgs" src="https://cdn.pixabay.com/photo/2023/02/26/14/04/deer-7815910_960_720.jpg" alt="">
+    <!-- <img class="artimgs" src="https://cdn.pixabay.com/photo/2023/03/02/14/41/sand-dunes-7825545_960_720.jpg" alt="">
+    <img class="artimgs" src="https://cdn.pixabay.com/photo/2023/02/26/16/06/squirrel-7816229_960_720.jpg" alt=""> -->
+
+
+
+
+    <script>
+        const img = document.querySelector('.banner_img')
+        let isFirstImg = true;
+
+        img.addEventListener('click', function () {
+            console.log('img clicked');
+
+            // if (isFirstImg) {
+            //     img.setAttribute('src', 'https://cdn.pixabay.com/photo/2022/12/04/16/17/leaves-7634894_960_720.jpg')
+            // }
+            // else {
+            //     img.setAttribute('src', 'https://cdn.pixabay.com/photo/2023/02/26/14/04/deer-7815910_960_720.jpg')
+            // }
+            // isFirstImg = false;
+        })
+
+
+
+    </script>
+</body>
+
+</html>

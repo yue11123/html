@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d-flex {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            background-color: aquamarine;
+            min-width: 120px;
+            width: 100px;
+            flex-basis: 50px;
+            max-width: 150px;
+        }
+
+        /* 結論: max-width/min-width > flex-basis > width > content */
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="box">box1</div>
+    </div>
+</body>
+
+</html>

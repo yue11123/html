@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boj-demo</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="mainMeal">
+        <button>1號餐</button>
+        <button>2號餐</button>
+        <button>3號餐</button>
+    </div>
+    <div id="sideMeal">
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+    </div>
+    <div id="result">
+        <p>主餐你點的是：<span id="mainMealResult"></span> </p>
+        <p>副餐你點的是：<span id="sideMealResult"></span></p>
+        <p>總價格：<span id="totalPrice"></span></p>
+    </div>
+    <script>
+        const mainMealMenu = {
+            '1號餐': { 'name': '大麥克', 'price': 72 }, '2號餐': {
+                'name': '雙層牛肉吉事堡',
+                'price': 62
+            }, '3號餐': { 'name': '嫩煎雞腿堡', 'price': 82 }
+        };
+        const sideMealMenu = {
+            'A': { 'name': '中薯+飲料', 'price': 55 }, 'B': {
+                'name': '冰旋風+飲料', 'price':
+                    85
+            }, 'C': { 'name': '麥克雞塊+薯條+飲料', 'price': 100 }
+        };
+        const mainMeal = document.querySelector('#mainMeal');
+        const sideMeal = document.querySelector('#sideMeal');
+        const mainMealResult = document.querySelector('#mainMealResult');
+        const sideMealResult = document.querySelector('#sideMealResult');
+        const totalPrice = document.querySelector('#totalPrice');
+        let mainMealPrice = 0;
+        let sideMealPrice = 0;
+
+        mainMeal.addEventListener('click', function (event) {
+            console.log('event target:', event.target.innerText);
+            const mealName = event.target.innerText;
+            console.log('data:', mainMealMenu[mealName]);
+            const mealDetail = mainMealMenu[mealName];
+            mainMealPrice = mealDetail.price;
+            mainMealResult.innerHTML = `${mealDetail.name}, 價格：${mealDetail.price}`;
+            totalPrice.innerHTML = mainMealPrice + sideMealPrice;
+
+            sideMeal.addEventListener('click', function (event) {
+                console.log('event target:', event.target.innerText);
+                const mealName = event.target.innerText;
+                console.log('data:', sideMealMenu[mealName]);
+                const mealDetail = sideMealMenu[mealName];
+                sideMealPrice = mealDetail.price;
+                sideMealResult.innerHTML = `${mealDetail.name}, 價格：${mealDetail.price}`;
+                totalPrice.innerHTML = mainMealPrice + sideMealPrice;
+
+            })
+        })
+    </script>
+</body>
+
+</html>
